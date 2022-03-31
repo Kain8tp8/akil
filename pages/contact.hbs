@@ -1,3 +1,18 @@
-<div class="container-sm p-5">
-  <h1 class="despleyer">conhellow</h1>
+<div class="container-sm">
+  <h2 class="text-white my-4">Today-{{title}}</h2>
+  <hr class="divider bg-white" />
+  <div class="d-flex justify-content-center ">
+    <input class="rounded-start w-30%" type="name" placeholder="Name..." />
+    <button class="btn btn-primary">Search</button>
+  </div>
+  <div class="container p-5">
+
+    <ul class="list-group">
+      {{#each contacts}}
+        <li class="list-group-item"> {{name}}: {{number}}; </li>
+        <li class="list-group-item"> {{name}}: {{number}}; </li>
+      {{/each}}
+    </ul>
+
+  </div>
 </div>
